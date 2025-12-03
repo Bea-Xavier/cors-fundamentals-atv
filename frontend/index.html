@@ -19,7 +19,7 @@
             resultadoElement.textContent = 'Carregando...';
             try {
                 // Requisição Fecth para a origem cruzada 
-                const response = await fext(API_URL);
+                const response = await fetch(API_URL);
 
                 // Se o CORS tivesse permitido, o código continuaria aqui.
                 const data = await response.json();
